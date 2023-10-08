@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rps-game/static/css/main.bb577a7b.css",
+    "main.js": "/rps-game/static/js/main.2d54573f.js",
+    "index.html": "/rps-game/index.html",
+    "main.bb577a7b.css.map": "/rps-game/static/css/main.bb577a7b.css.map",
+    "main.2d54573f.js.map": "/rps-game/static/js/main.2d54573f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb577a7b.css",
+    "static/js/main.2d54573f.js"
+  ]
+}
