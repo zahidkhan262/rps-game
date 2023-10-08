@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import RPS from './RPS';
+import { Toaster } from 'react-hot-toast'
+
 
 function App() {
+
+  const [gameState, setGameState] = useState({
+    score: 0,
+    computerScore: 0,
+    userScore: 0,
+    userChoice: "",
+    computerChoice: "",
+    result: ""
+
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Toaster />
+      <RPS setGameState={setGameState} gameState={gameState} />
+    </>
   );
 }
 
